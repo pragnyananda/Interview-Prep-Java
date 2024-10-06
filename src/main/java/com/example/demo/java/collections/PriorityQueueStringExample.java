@@ -2,12 +2,12 @@ package com.example.demo.java.collections;
 
 import java.util.PriorityQueue;
 
-public class PriorityQueueExample {
+public class PriorityQueueStringExample {
 
     public static void main(String[] args) {
-        PriorityQueue<Integer> minHeapQueue = new PriorityQueue<>(); //By default, PriorityQueue is a min-heap
-        //or with comparator
-        //PriorityQueue<Integer> maxHeapQueue = new PriorityQueue<>((Integer a, Integer b) -> a-b);
+        PriorityQueue<String> minHeapQueue = new PriorityQueue<>(); //By default, PriorityQueue is a min-heap
+        //or
+        //PriorityQueue<String> maxHeapQueue = new PriorityQueue<>((String a, String b) -> a.compareTo(b));
 
 //        Insertion in Min-Heap:
 
@@ -16,10 +16,10 @@ public class PriorityQueueExample {
 //                Time Complexity:
 
 //        O(log n) due to the heapify-up process.
-        minHeapQueue.add(10);
-        minHeapQueue.add(5);
-        minHeapQueue.add(20);
-        minHeapQueue.add(1);
+        minHeapQueue.add("apple");
+        minHeapQueue.add("doll");
+        minHeapQueue.add("cat");
+        minHeapQueue.add("bob");
 
         System.out.println(minHeapQueue);
 
@@ -30,7 +30,7 @@ public class PriorityQueueExample {
 //                Time Complexity:
 //        O(log n) due to the heapify-down process.
 
-        minHeapQueue.remove(1);
+        minHeapQueue.remove("bob");
 
         System.out.println(minHeapQueue);
 
@@ -51,12 +51,12 @@ public class PriorityQueueExample {
 
         //By default, PriorityQueue is a min-heap
         // for maxheap we need to provide comparator in the arguments
-        PriorityQueue<Integer> maxHeapQueue = new PriorityQueue<>((Integer a, Integer b) -> b - a);
+        PriorityQueue<String> maxHeapQueue = new PriorityQueue<>((String a, String b) -> b.compareTo(a));
 
-        maxHeapQueue.add(10);
-        maxHeapQueue.add(5);
-        maxHeapQueue.add(20);
-        maxHeapQueue.add(1);
+        maxHeapQueue.add("apple");
+        maxHeapQueue.add("doll");
+        maxHeapQueue.add("cat");
+        maxHeapQueue.add("bob");
 
         System.out.println(maxHeapQueue);
 
