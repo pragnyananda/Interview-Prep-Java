@@ -1,0 +1,58 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Java compiled class files
+*.class
+
+# Logs
+logs/
+*.log
+
+# Maven specific files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+dependency-reduced-pom.xml
+release.properties
+
+# Gradle specific files
+build/
+.gradle/
+*.gradle
+gradle-wrapper.jar
+gradle-wrapper.properties
+*.iml
+
+# IntelliJ specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Environment variables and configuration
+*.env
+*.properties
+*.yml
+*.yaml
+*.local
+
+# Ignore local files
+*.db
+*.sqlite
+
+# Ignore other files
+*.jar
+*.war
+*.ear
+
+# Ignore coverage reports
+coverage/
+
+# Ignore OS-specific files
+.DS_Store          # macOS
+Thumbs.db          # Windows
+
+
