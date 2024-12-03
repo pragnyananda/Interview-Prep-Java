@@ -1,6 +1,6 @@
 package com.example.demo.algorithms.dynamicProgramming;
 
-public class Fibonacci_Series {
+public class Fibonacci_Series_leetcode_509 {
     public static int getFibonacciSeriesRecursion(int num){
         if (num< 2){
             return num;
