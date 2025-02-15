@@ -51,38 +51,6 @@ public class MaxSumSubArrayOfSizeK {
         return maxSum;
     }
     
-    static List<Integer> FirstNegativeInteger(int arr[], int k) {
-            // write code here
-            
-            List<Long> list = new ArrayList<>();
-            Queue<Long> queue = new PriorityQueue<>();
-            int index=0;
-            
-            while(index<arr.length && index< k){
-                if(arr[index] < 0){
-                    list.add(arr[index]);
-                    break;
-                }
-                index++;
-            }
-            if(list.size() == 0){
-                list.add(0);
-            }
-            for(int i=1;i< arr.length-k+1;i++){
-                if(arr[i] < 0){
-                    list.add(arr[i]);
-                    continue;
-                }
-                // if(list.size()<i+1){
-                //     list.add(0);
-                // }
-            }
-            
-            
-            
-            return list;
-        }
-    
     public static void main(String[] args) {
         System.out.println(maxSubArrayOfSizeK(new int[] {100, 200, 300, 400}, 2));
         
